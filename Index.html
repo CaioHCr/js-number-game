@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess the number</title>
+    <title>Guess the Number</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap"
@@ -14,20 +14,22 @@
   </head>
   <body>
     <main>
-      <div class="screen1 hide">
-        <h1>Guess the number</h1>
-        <p>guess the number between 0-10</p>
+      <div class="screen1">
+        <h1>Guess the Number</h1>
+        <p>Guess the Number between 0-10</p>
 
         <form>
-          <input type="number" />
-          <button>Try</button>
+          <input id="inputNumber" type="number" />
+          <button id="btnTry"> Try </button>
         </form>
       </div>
 
-      <div class="screen2">
-        <h2>Guessed in 3 tries</h2>
-        <button>Play again</button>
+      <div class="screen2 hide">
+        <h2>Guessed in x tries</h2>
+        <button id="btnReset">Play again</button>
       </div>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
